@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@react-three/fiber": "^9.1.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "postprocessing": "^6.37.1",
+    "three": "^0.174.0",
+    "three-geojson-geometry": "^2.1.1"
+  },
+  "devDependencies": {
+    "@react-three/drei": "^9.88.7",
+    "@types/geojson": "^7946.0.16",
+    "@types/react": "^19.0.12",
+    "@types/three": "^0.174.0"
+  }
+}

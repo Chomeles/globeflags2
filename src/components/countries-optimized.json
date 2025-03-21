@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ISO_A2": "DE",
+        "NAME": "Germany",
+        "CAPITAL": "Berlin",
+        "POPULATION": 83783942,
+        "GDP": 3800,
+        "AREA": 357022
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [13.4, 54.9],
+          [13.4, 54.8],
+          [13.5, 54.8],
+          [13.5, 54.9],
+          [13.4, 54.9]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ISO_A2": "FR",
+        "NAME": "France",
+        "CAPITAL": "Paris",
+        "POPULATION": 65273511,
+        "GDP": 2600,
+        "AREA": 551695
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [2.2, 51.1],
+          [2.2, 51.0],
+          [2.3, 51.0],
+          [2.3, 51.1],
+          [2.2, 51.1]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ISO_A2": "IT",
+        "NAME": "Italy",
+        "CAPITAL": "Rome",
+        "POPULATION": 60461826,
+        "GDP": 1900,
+        "AREA": 301340
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [12.5, 41.9],
+          [12.5, 41.8],
+          [12.6, 41.8],
+          [12.6, 41.9],
+          [12.5, 41.9]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ISO_A2": "ES",
+        "NAME": "Spain",
+        "CAPITAL": "Madrid",
+        "POPULATION": 46754778,
+        "GDP": 1400,
+        "AREA": 505992
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-3.7, 40.4],
+          [-3.7, 40.3],
+          [-3.6, 40.3],
+          [-3.6, 40.4],
+          [-3.7, 40.4]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ISO_A2": "GB",
+        "NAME": "United Kingdom",
+        "CAPITAL": "London",
+        "POPULATION": 67886011,
+        "GDP": 2800,
+        "AREA": 242495
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-0.1, 51.5],
+          [-0.1, 51.4],
+          [0.0, 51.4],
+          [0.0, 51.5],
+          [-0.1, 51.5]
+        ]]
+      }
+    }
+  ]
+} 
