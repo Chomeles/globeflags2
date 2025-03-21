@@ -1,4 +1,13 @@
 {
+  "name": "globeflags2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "esbuild src/index.ts --bundle --outfile=dist/worker.js --format=esm",
+    "start": "wrangler dev"
+  },
   "dependencies": {
     "@react-three/fiber": "^9.1.0",
     "@react-three/postprocessing": "^3.0.4",
@@ -7,9 +16,12 @@
     "three-geojson-geometry": "^2.1.1"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
     "@react-three/drei": "^9.88.7",
     "@types/geojson": "^7946.0.16",
     "@types/react": "^19.0.12",
-    "@types/three": "^0.174.0"
+    "@types/three": "^0.174.0",
+    "esbuild": "^0.20.2",
+    "wrangler": "^4.3.0"
   }
 }

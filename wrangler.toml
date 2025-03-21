@@ -1,0 +1,27 @@
+name = "globeflags2"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = "./dist"
+
+[build]
+command = "npm run build"
+watch_dir = "src"
+
+[env.production]
+name = "globeflags2"
+route = "globeflags.info/*"
+zone_id = ""  # Hier muss die Zone-ID eingefügt werden
+
+[env.production.vars]
+NODE_ENV = "production"
+
+[env.development]
+name = "globeflags2-dev"
+route = "dev.globeflags.info/*"
+zone_id = ""  # Hier muss die Zone-ID eingefügt werden
+
+[env.development.vars]
+NODE_ENV = "development" 
