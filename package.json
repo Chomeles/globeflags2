@@ -26,7 +26,7 @@
     "three-geojson-geometry": "^2.1.1"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^0.1.0",
+    "@cloudflare/vite-plugin": "^0.1.14",
     "@cloudflare/workers-types": "^4.20240320.1",
     "@react-three/drei": "^9.102.6",
     "@types/geojson": "^7946.0.14",
@@ -35,7 +35,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.20.2",
-    "vite": "^5.1.4",
+    "vite": "^6.2.2",
     "wrangler": "^4.3.0"
   }
 }
