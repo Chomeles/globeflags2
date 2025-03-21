@@ -1,14 +1,20 @@
 name = "globeflags2"
 main = "src/index.ts"
-compatibility_date = "2024-11-01"
-compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2024-03-21"
 
-[site]
-bucket = "./dist"
+[assets]
+directory = "./dist"
+include = ["**/*"]
 
 [build]
 command = "npm run build"
 watch_dir = "src"
+
+[triggers]
+crons = []
+
+[vars]
+NODE_ENV = "production"
 
 [env.production]
 name = "globeflags2"

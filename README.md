@@ -78,3 +78,61 @@ npx wrangler deploy
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [React Documentation](https://reactjs.org/)
+
+# GlobeFlags2
+
+Ein interaktiver 3D-Globus mit Länderflaggen, gebaut mit React Three Fiber und Cloudflare Workers.
+
+## Entwicklung
+
+### Voraussetzungen
+
+- Node.js 20 oder höher
+- npm 10 oder höher
+- Ein Cloudflare-Konto
+
+### Installation
+
+1. Repository klonen:
+```bash
+git clone https://github.com/Chomeles/globeflags2.git
+cd globeflags2
+```
+
+2. Abhängigkeiten installieren:
+```bash
+npm install
+```
+
+3. Entwicklungsserver starten:
+```bash
+npm run dev
+```
+
+### Deployment
+
+Das Projekt verwendet GitHub Actions für automatische Deployments zu Cloudflare Workers.
+
+#### Einrichtung der CI/CD-Pipeline
+
+1. In den GitHub Repository-Einstellungen folgende Secrets hinzufügen:
+   - `CLOUDFLARE_API_TOKEN`: Ein Cloudflare API-Token mit Workers-Berechtigung
+   - `CLOUDFLARE_ACCOUNT_ID`: Ihre Cloudflare Account-ID
+
+2. Push zu `main` löst automatisch ein Deployment aus.
+
+### Manuelles Deployment
+
+```bash
+npm run build
+npm run deploy
+```
+
+## Umgebungsvariablen
+
+- `CLOUDFLARE_API_TOKEN`: Cloudflare API-Token
+- `CLOUDFLARE_ACCOUNT_ID`: Cloudflare Account-ID
+
+## Lizenz
+
+MIT
