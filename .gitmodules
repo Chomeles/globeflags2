@@ -1,0 +1,3 @@
+[submodule "Cloudflare2"]
+	path = Cloudflare2
+	url = https://github.com/Chomeles/globeflags2.git
