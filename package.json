@@ -9,8 +9,8 @@
     "build": "npm run clean && npm run build:worker && npm run build:client && npm run build:assets",
     "build:worker": "esbuild src/index.ts --bundle --outfile=dist/worker.js --format=esm",
     "build:client": "vite build src/react-app --outDir ../../dist/assets",
-    "build:assets": "powershell -Command \"Copy-Item -Path public/* -Destination dist/ -Recurse -Force\"",
-    "clean": "powershell -Command \"Remove-Item -Path dist -Recurse -Force -ErrorAction SilentlyContinue; New-Item -ItemType Directory -Path dist -Force\"",
+    "build:assets": "cp -r public/* dist/",
+    "clean": "rm -rf dist && mkdir dist",
     "start": "npm run worker:dev"
   },
   "dependencies": {
