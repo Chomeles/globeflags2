@@ -9,19 +9,20 @@
     "start": "wrangler dev"
   },
   "dependencies": {
-    "@react-three/fiber": "^9.1.0",
-    "@react-three/postprocessing": "^3.0.4",
-    "postprocessing": "^6.37.1",
-    "three": "^0.174.0",
+    "@react-three/fiber": "^8.15.16",
+    "@react-three/postprocessing": "^2.15.13",
+    "postprocessing": "^6.34.1",
+    "react": "^18.2.0",
+    "three": "^0.161.0",
     "three-geojson-geometry": "^2.1.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240208.0",
-    "@react-three/drei": "^9.88.7",
+    "@react-three/drei": "^9.97.0",
     "@types/geojson": "^7946.0.16",
-    "@types/react": "^19.0.12",
-    "@types/three": "^0.174.0",
-    "esbuild": "^0.20.2",
+    "@types/react": "^18.2.55",
+    "@types/three": "^0.161.2",
+    "esbuild": "^0.20.1",
     "wrangler": "^4.3.0"
   }
 }
