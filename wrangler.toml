@@ -1,33 +1,35 @@
 name = "globeflags2"
-main = "src/index.ts"
-compatibility_date = "2024-03-21"
+main = "dist/worker.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
 
-[assets]
-directory = "./dist"
-include = ["**/*"]
+# Konfigurationen für statische Assets
+[site]
+bucket = "./dist"
 
 [build]
 command = "npm run build"
-watch_dir = "src"
 
-[triggers]
-crons = []
-
+# Umgebungsvariablen festlegen
 [vars]
 NODE_ENV = "production"
 
-[env.production]
-name = "globeflags2"
-route = "globeflags.info/*"
-zone_id = ""  # Hier muss die Zone-ID eingefügt werden
+# Route-Konfigurationen
+[[routes]]
+pattern = "globeflags.info/*"
+# Zone-ID wird automatisch von Cloudflare zugewiesen
 
-[env.production.vars]
-NODE_ENV = "production"
+[[routes]]
+pattern = "globeflags2.chomeles.workers.dev/*"
 
-[env.development]
-name = "globeflags2-dev"
-route = "dev.globeflags.info/*"
-zone_id = ""  # Hier muss die Zone-ID eingefügt werden
+# Worker-Platzierung optimieren
+[placement]
+mode = "smart"
 
-[env.development.vars]
-NODE_ENV = "development" 
+# Trigger-Ereignisse definieren
+[triggers]
+crons = []
+
+# Bindings konfigurieren für die KV-Assets
+[kv_namespaces]
+binding = "ASSETS" 
